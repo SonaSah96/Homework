@@ -4,7 +4,6 @@ def combine_all_textes():
     abs_path = os.getcwd()
     with open(os.path.join(abs_path, "combine.txt"), "w") as f:
         for root, directories, files in os.walk("."):
-            print(root)
             for name in files:
                 if name.endswith(".txt"):
                     #if root != ".":
